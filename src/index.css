@@ -1,0 +1,416 @@
+
+  /* Starts Normalize css  */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; 
+  vertical-align: baseline; 
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+img {
+  border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; 
+  font: inherit; 
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"], 
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; 
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; 
+  padding: 0; 
+}
+textarea {
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/* Ends Normalize css  */
+
+/* Starts Global css */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+ul{
+  padding: 0;
+}
+.text-center{
+  text-align: center;
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after,
+.container:after,
+.row:after {
+  clear: both;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+.form-element{
+  margin-bottom: 15px;
+}
+.form-element > label{
+  min-width: 40px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+.form-object{
+  width: 150px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.form-object.multiple{
+  height: auto;
+}
+.msg{
+  font-size: 13px;
+  line-height: 15px;
+}
+.error-msg{
+  color: red;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
+}
+/* Ends  Global css */
+
+/* Starts custom code  */
+.main-header{
+  padding: 15px 0;
+  background: #f3e4c5;
+  
+}
+.login-wrap{
+  width: 400px;
+  min-height: 300px;
+  margin: 45px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+.login-wrap h1{
+  font-size: 30px;
+  line-height: 32px;
+  margin-bottom: 15px;;
+}
+.login-btn{
+  margin-left: 97px;
+  background: #fff;
+}
+.main-nav {
+  list-style: none;
+  float: right;
+}
+.main-nav li{
+  float: left;
+}
+.main-nav li+li{
+  margin-left: 15px;
+}
+.main-nav li a{
+  color:#000;
+  text-decoration:none;
+}
+.main-nav li a:hover,
+.main-nav li button:hover{
+  text-decoration: underline;
+}
+.main-nav button {
+  background: transparent;
+  border: none;
+}
+.btn{
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  cursor: pointer;
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+
+.search-wrap{
+  margin-right: 150px;
+}
+.movieList{
+  list-style: none;
+  margin-left: -2%;
+}
+.movieList li{
+  width: 30%;
+  margin: 0 0 2% 2%;
+  float: left;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 160px;
+}
+.movieList li a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  height: 100%;
+}
+.movieList li a:hover{
+  background: #f5f2f2;
+}
+.movieList li h5{
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  color: #678;
+  min-height: 36px;
+}
+.movie-poster{
+  display: inline-block;
+  margin-right: 15px;
+}
+.poster img{
+  border: 1px solid #ccc;
+}
+.movieList li img{
+  max-height: 85px;
+}
+.releaseDate{
+  vertical-align: top;
+  color: #456;
+  font-size: 14px;
+}
+.details-page {
+  padding: 30px 0;
+}
+.details-page h1,
+.details-label,
+.movie-details h4{
+  color: #678;
+}
+.movie-details h4{
+  margin-top: 10px;
+}
+.details-page h1 {
+  margin-bottom: 15px;
+}
+.movie-details{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+}
+.details-label{
+  font-weight: bold;
+}
+.details-wrap{
+  margin-bottom: 15px;
+}
+.add-movie-wrap {
+  padding-top: 20px;   
+  padding-bottom: 40px;   
+}
+
+/*  Starts Responsive css */
+@media (max-width: 767px) {
+  .login-wrap{
+    max-width: 400px;
+    width:100%;
+  }
+  .login-wrap h1{
+    font-size: 25px;
+    line-height: 27px;
+  }
+  .movieList{
+    margin: 0 0 15px 0;
+  }
+  .movieList li{
+    width: 100%;
+    margin: 0 0 15px
+  }
+  .search-wrap{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .search-wrap,
+  .filter-wrap{
+    width: 100%;
+  }
+  .search-wrap .form-object,
+  .filter-wrap .form-object,
+  .add-movie-wrap .form-object{
+    width: 90%;
+  }
+  .search-wrap label,
+  .filter-wrap label,
+  .add-movie-wrap label{
+    margin-bottom: 10px;
+    display: block;
+  }
+  .main-nav {
+    float: left;
+  }
+  
+}
+
+.error {
+  color: red;
+}
